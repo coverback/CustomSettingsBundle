@@ -12,6 +12,8 @@
 		9C0A02351F36111E00340FAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A02331F36111E00340FAD /* Main.storyboard */; };
 		9C0A02371F36111E00340FAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A02361F36111E00340FAD /* Assets.xcassets */; };
 		9C0A023A1F36111E00340FAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A02381F36111E00340FAD /* LaunchScreen.storyboard */; };
+		9C0A02421F36154400340FAD /* ProdSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A02411F36154400340FAD /* ProdSettings.bundle */; };
+		9C0A02441F36156B00340FAD /* DevSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A02431F36156B00340FAD /* DevSettings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9C0A02361F36111E00340FAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C0A02391F36111E00340FAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C0A023B1F36111E00340FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C0A02411F36154400340FAD /* ProdSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProdSettings.bundle; sourceTree = "<group>"; };
+		9C0A02431F36156B00340FAD /* DevSettings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DevSettings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				9C0A02361F36111E00340FAD /* Assets.xcassets */,
 				9C0A02381F36111E00340FAD /* LaunchScreen.storyboard */,
 				9C0A023B1F36111E00340FAD /* Info.plist */,
+				9C0A02431F36156B00340FAD /* DevSettings.bundle */,
+				9C0A02411F36154400340FAD /* ProdSettings.bundle */,
 			);
 			path = CustomSettingsBundle;
 			sourceTree = "<group>";
@@ -124,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0A023A1F36111E00340FAD /* LaunchScreen.storyboard in Resources */,
+				9C0A02441F36156B00340FAD /* DevSettings.bundle in Resources */,
+				9C0A02421F36154400340FAD /* ProdSettings.bundle in Resources */,
 				9C0A02371F36111E00340FAD /* Assets.xcassets in Resources */,
 				9C0A02351F36111E00340FAD /* Main.storyboard in Resources */,
 			);
