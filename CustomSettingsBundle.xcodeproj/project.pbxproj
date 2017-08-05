@@ -12,8 +12,6 @@
 		9C0A02351F36111E00340FAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A02331F36111E00340FAD /* Main.storyboard */; };
 		9C0A02371F36111E00340FAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A02361F36111E00340FAD /* Assets.xcassets */; };
 		9C0A023A1F36111E00340FAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A02381F36111E00340FAD /* LaunchScreen.storyboard */; };
-		9C0A02421F36154400340FAD /* ProdSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A02411F36154400340FAD /* ProdSettings.bundle */; };
-		9C0A02441F36156B00340FAD /* DevSettings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A02431F36156B00340FAD /* DevSettings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +78,7 @@
 				9C0A02281F36111E00340FAD /* Sources */,
 				9C0A02291F36111E00340FAD /* Frameworks */,
 				9C0A022A1F36111E00340FAD /* Resources */,
+				9C0A02451F36177700340FAD /* Copy Settings Bundle */,
 			);
 			buildRules = (
 			);
@@ -130,14 +129,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0A023A1F36111E00340FAD /* LaunchScreen.storyboard in Resources */,
-				9C0A02441F36156B00340FAD /* DevSettings.bundle in Resources */,
-				9C0A02421F36154400340FAD /* ProdSettings.bundle in Resources */,
 				9C0A02371F36111E00340FAD /* Assets.xcassets in Resources */,
 				9C0A02351F36111E00340FAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C0A02451F36177700340FAD /* Copy Settings Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Settings Bundle";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SRC_DIR=\"${PROJECT_DIR}/CustomSettingsBundle\"\nif [ \"${CONFIGURATION}\" != \"Debug\" ]; then\n    cp -rf \"${SRC_DIR}/DevSettings.bundle\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Settings.bundle\"\nelse\n    cp -rf \"${SRC_DIR}/ProdSettings.bundle\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Settings.bundle\"\nfi";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C0A02281F36111E00340FAD /* Sources */ = {
