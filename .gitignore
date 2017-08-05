@@ -1,0 +1,29 @@
+*~
+.DS_Store
+
+# Xcode
+build/*
+*.pbxuser
+!default.pbxuser
+xcuserdata
+project.xcworkspace
+*.xccheckout
+*.xctimeline
+*.xcscmblueprint
+
+# AppCode
+.idea
+
+# RVM and Jenkins
+rvm.env
+
+# Pods
+Pods/*
+
+# Temp files and such
+*.swp
+*.out
+*.dot
+
+# Artifacts
+*.ipa
